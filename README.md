@@ -8,7 +8,7 @@ Key Features:
   Advanced Positional Encodings
   Global Contextualization
 
-
+-
 CoheraText/
 │
 ├── data/              # Directory for storing data files
