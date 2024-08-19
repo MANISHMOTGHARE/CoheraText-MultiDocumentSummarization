@@ -17,7 +17,6 @@ Key Features:
   Advanced Positional Encodings
 <br>
   Global Contextualization
-
 <br>
 CoheraText/
 │
