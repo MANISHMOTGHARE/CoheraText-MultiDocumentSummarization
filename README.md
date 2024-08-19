@@ -1,14 +1,24 @@
 CoheraText-MultiDocumentSummarization
+<br>
+Author - Prof. Manish Motghare
+<br>
 A Multi-Document Abstractive Summarization Model for Coherent Text Generation.
+<br>
 Project Title: CoheraText - Multi-Document Summarization
+<br>
 Description: An advanced model designed for generating coherent summaries from multiple document sources. Utilizes hierarchical attention, memory augmentation, and global contextualization for superior performance.
+<br>
 Key Features:
+<br>
   Hierarchical Attention
+<br>
   Memory Augmentation
+<br>  
   Advanced Positional Encodings
+<br>
   Global Contextualization
 
--
+<br>
 CoheraText/
 │
 ├── data/              # Directory for storing data files
