@@ -1,46 +1,41 @@
-CoheraText-MultiDocumentSummarization
-<br>
-Author - Prof. Manish Motghare
-<br>
-A Multi-Document Abstractive Summarization Model for Coherent Text Generation.
-<br>
-Project Title: CoheraText - Multi-Document Summarization
-<br>
-Description: An advanced model designed for generating coherent summaries from multiple document sources. Utilizes hierarchical attention, memory augmentation, and global contextualization for superior performance.
-<br>
+CoheraText – Multi-Document Abstractive Text Summarization
+
+Author: Prof. Manish Motghare
+Overview
+
+CoheraText is a state-of-the-art multi-document abstractive summarization model designed for generating coherent, factually accurate, and concise summaries from clusters of related news articles. The model leverages hierarchical attention, memory augmentation, and global contextualization, and is extensively evaluated on the IndoSumm dataset—the largest manually curated Indian news summarization dataset to date.
+
 Key Features:
-<br>
-  Hierarchical Attention
-<br>
-  Memory Augmentation
-<br>  
-  Advanced Positional Encodings
-<br>
-  Global Contextualization
-<br>
-CoheraText/
-│
-├── data/              # Directory for storing data files
-│   ├── raw/           # Raw data collected from sources
+
+    Hierarchical Attention: Multi-level attention at sentence, document, and cluster granularity
+
+    Memory Augmentation: External memory module for factual consistency and cross-document reasoning
+
+    Advanced Positional Encodings: For robust long-context fusion
+
+    Global Contextualization: Maintains discourse structure across documents
+
+    Transferability: Generalizes across Indian and international news benchmarks
+
+    Human-Centric Evaluation: Model development guided by human annotator preferences
+
+    Repository Structure:
+    CoheraText/
+├── data/
+│   ├── raw/           # Raw data collected from news sources
 │   ├── processed/     # Processed data ready for model training
-│
-├── src/               # Source code directory
-│   ├── model/         # Model definition files (e.g., BERT-based summarization model)
+├── src/
+│   ├── model/         # Model definition files (architecture, layers)
 │   ├── preprocessing/ # Scripts for data cleaning and preparation
-│   ├── training/      # Scripts for training the model
-│   ├── evaluation/    # Scripts for evaluating the model performance
-│   ├── deployment/    # Scripts for deploying the model (e.g., Flask or FastAPI app)
-│
-├── notebooks/         # Jupyter notebooks for experiments and data analysis
-│
+│   ├── training/      # Training scripts and configs
+│   ├── evaluation/    # Scripts for evaluation and metric computation
+│   ├── deployment/    # Deployment scripts (API, web-app, etc.)
+├── notebooks/         # Jupyter notebooks for experiments and analysis
 ├── scripts/           # Utility scripts
-│
-├── tests/             # Test cases for your code
-│
-├── docs/              # Documentation files (e.g., Sphinx or MkDocs)
-│
+├── tests/             # Unit and integration test cases
+├── docs/              # Project documentation
 ├── requirements.txt   # Python dependencies
-│
-├── README.md          # Project overview
-│
+├── README.md          # This file
 └── LICENSE            # License for the project
+
+    
