@@ -20,19 +20,19 @@ CoheraText is a state-of-the-art multi-document abstractive summarization model 
 ## Repository Structure
 
 CoheraText/
-├── data/
-│ ├── raw/ # Raw data collected from news sources
-│ ├── processed/ # Processed data ready for model training
-├── src/
-│ ├── model/ # Model definition files (architecture, layers)
-│ ├── preprocessing/ # Scripts for data cleaning and preparation
-│ ├── training/ # Training scripts and configs
-│ ├── evaluation/ # Scripts for evaluation and metric computation
-│ ├── deployment/ # Deployment scripts (API, web-app, etc.)
-├── notebooks/ # Jupyter notebooks for experiments and analysis
-├── scripts/ # Utility scripts
-├── tests/ # Unit and integration test cases
-├── docs/ # Project documentation
-├── requirements.txt # Python dependencies
-├── README.md # This file
-└── LICENSE # License for the project
+├── data/                      # Data directory
+│   ├── raw/                   # Raw news data collected from multiple sources
+│   ├── processed/             # Cleaned, tokenized, and clustered data for training/validation/testing
+├── src/                       # Source code
+│   ├── model/                 # Model architectures (CoheraText, baselines, utility layers)
+│   ├── preprocessing/         # Data preprocessing scripts (cleaning, deduplication, tokenization)
+│   ├── training/              # Training scripts, fine-tuning, and early stopping routines
+│   ├── evaluation/            # Evaluation scripts for ROUGE, BERTScore, human metrics, etc.
+│   ├── deployment/            # Scripts for inference, REST API, or web app integration
+├── notebooks/                 # Jupyter notebooks for experiments, visualization, and analysis
+├── scripts/                   # Helper and utility scripts (data checks, reproducibility, etc.)
+├── tests/                     # Unit, integration, and regression test cases
+├── docs/                      # Documentation (usage, API reference, paper, diagrams)
+├── requirements.txt           # Python dependencies required for the project
+├── README.md                  # Project overview and instructions (this file)
+└── LICENSE                    # License for open-source distribution
