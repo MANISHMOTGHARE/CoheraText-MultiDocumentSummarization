@@ -8,31 +8,32 @@ CoheraText is a state-of-the-art multi-document abstractive summarization model 
 
 ## Key Features
 
-- **Hierarchical Attention:** Multi-level attention at sentence, document, and cluster granularity  
-- **Memory Augmentation:** External memory module for factual consistency and cross-document reasoning  
-- **Advanced Positional Encodings:** For robust long-context fusion  
-- **Global Contextualization:** Maintains discourse structure across documents  
-- **Transferability:** Generalizes across Indian and international news benchmarks  
-- **Human-Centric Evaluation:** Model development guided by human annotator preferences  
-
----
+- **Hierarchical Attention**: Multi-level transformer attention at sentence, document, and cluster levels for deep context modeling.
+- **Memory Augmentation**: External memory module to enhance factual consistency and enable effective cross-document reasoning.
+- **Cross-Document Semantic Alignment**: Aligns information and resolves redundancy across multiple news sources within a cluster.
+- **Global Contextualization**: Maintains discourse flow and narrative structure across documents for high-quality abstractive summaries.
+- **Composite Training Objectives**: Joint optimization for generation quality, coverage, and factual accuracy (cross-entropy, coverage, and factual loss).
+- **Human-Centric Evaluation**: Annotation, training, and model selection guided by large-scale human-written references and expert annotators.
+- **Transferability**: Demonstrated generalization across both Indian and international news benchmarks (CNN/DailyMail, XSum, Multi-News, WikiSum).
+- **Open and Reproducible**: All code, model checkpoints, and the IndoSumm dataset are released for the research community under an open license.
 
 ## Repository Structure
 
 CoheraText/
-├── data/                      # Data directory
-│   ├── raw/                   # Raw news data collected from multiple sources
-│   ├── processed/             # Cleaned, tokenized, and clustered data for training/validation/testing
-├── src/                       # Source code
-│   ├── model/                 # Model architectures (CoheraText, baselines, utility layers)
-│   ├── preprocessing/         # Data preprocessing scripts (cleaning, deduplication, tokenization)
-│   ├── training/              # Training scripts, fine-tuning, and early stopping routines
-│   ├── evaluation/            # Evaluation scripts for ROUGE, BERTScore, human metrics, etc.
-│   ├── deployment/            # Scripts for inference, REST API, or web app integration
-├── notebooks/                 # Jupyter notebooks for experiments, visualization, and analysis
-├── scripts/                   # Helper and utility scripts (data checks, reproducibility, etc.)
-├── tests/                     # Unit, integration, and regression test cases
-├── docs/                      # Documentation (usage, API reference, paper, diagrams)
-├── requirements.txt           # Python dependencies required for the project
-├── README.md                  # Project overview and instructions (this file)
-└── LICENSE                    # License for open-source distribution
+├── data/ # Data directory
+│ ├── raw/ # Raw news data from multiple Indian newspapers
+│ └── processed/ # Cleaned, tokenized, clustered data for train/val/test
+├── src/ # Source code for models and utility layers
+│ ├── model/ # Model architectures: CoheraText, baselines, utility layers
+│ ├── preprocessing/ # Data preprocessing scripts: cleaning, deduplication, tokenization
+│ ├── training/ # Training scripts, fine-tuning, early stopping routines
+│ └── evaluation/ # Scripts for ROUGE, BERTScore, human metrics, ablation, etc.
+├── deployment/ # Scripts for inference, REST API, or web app integration
+├── notebooks/ # Jupyter notebooks for experiments, visualization, and analysis
+├── scripts/ # Helper scripts: data checks, reproducibility, etc.
+├── tests/ # Unit and regression tests
+├── docs/ # Documentation: usage, API reference, diagrams
+├── requirements.txt # Python dependencies for running the project
+├── README.md # Project overview, features, installation, and usage guide
+└── LICENSE # License file (e.g., CC BY 4.0)
+
