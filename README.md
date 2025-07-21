@@ -37,3 +37,9 @@ CoheraText/
 ├── README.md # Project overview, features, installation, and usage guide
 └── LICENSE # License file (e.g., CC BY 4.0)
 
+##Public Datasets Used for Benchmarking
+
+We compare our models and approaches against the following public abstractive summarization datasets:
+
+CNN/DailyMail, XSum, Multi-News, WikiSum, Multi-Xscience, NewSHead, Newsroom, WikiHow, Gigaword, Reddit TIFU, BookSum, NYT Annotated Corpus, BillSum, BigPatent, LCSTS, SAMSum, WikiLingua, MLSUM, Opinosis, Webis-TLDR-17, Polish Summaries Corpus (PSC), AESLC, SCITLDR, MATINF, WikiSummary, XL-Sum, Wikipedia Current Events Portal (WCEP), PeerSum, ConvoSumm, DUC 2004, TAC 2011, KALIMAT Multipurpose Arabic Corpus, RedSum, WCEP-10, NewsSumm (IndoSumm), Global Voices, Shmoop Corpus, FINDSum, AMR Bank, DialogSum, SciTLDR, arXiv Summarization Dataset, GLGE, BookSum, M3LS, OpenDebateEvidence, PlainFact, Proto Summ, Webis-Snippet-20, CASS, How2, CorpusTCC, NarraSum, WITS, DMQA, MLSUM, MultiLing Pilot 2011
+
